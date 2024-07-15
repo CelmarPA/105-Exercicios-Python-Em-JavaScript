@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 003</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: linear-gradient(45deg, #3498db, #9b59b6);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh; 
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column nowrap;         
+        }
+
+        .container h1 {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .container p {
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px; /* Espaçamento entre o input e a mensagem */
+            gap: 5px;
+        }
+
+        .container button {
+            font-size: 1rem;
+            padding: 5px;
+            border-radius: 4px;
+            border: none;
+            box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .container button:hover {
+            cursor: pointer;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercício 003</h1>
+        <p>Crie um programa que leia dois número e mostre a soma entre eles.</p>
+        <div class="input">
+            <label for="n1">Primeiro Número: </label>
+            <input type="number" name="n1" id="n1">
+        </div>
+        <div class="input">
+            <label for="n2">Segundo Número: </label>
+            <input type="number" name="n2" id="n2">
+        </div>
+
+        <button id="calcular">Clique para Somar</button>
+
+        <p id="resultado"></p>
+    </div>
+
+    <script src="ex003.js"></script>
+</body>
+</html>
