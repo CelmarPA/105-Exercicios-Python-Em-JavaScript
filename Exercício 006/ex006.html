@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 006</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- 
+                        ______ Exercício 006 ______
+         Crie um algoritmo que leia um número e mostre o seu dobro, triplo e raiz quadrada.
+    -->
+    
+    <div class="container">
+        <h1>Exercício 006</h1>
+        <div class="content">
+            <p>
+                Digite um número para saber seu dobro, triplo e raiz quadrada.
+            </p>
+            <form action="#">
+                <label for="inNum">Digite um número:</label>
+                <input type="number" name="inNum" id="inNum" min="1" step="1" required autofocus>
+                <input type="button" id="btnCalcular" value="Calcular">
+                <input type="reset" id="btnLimpar" value="Limpar">
+            </form>
+            <h3 id="outResp1"></h3>
+            <h3 id="outResp2"></h3>
+            <h3 id="outResp3"></h3>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
