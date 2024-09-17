@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 010</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- 
+                            ______ Exercício 010 ______   
+            Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dólares ela pode comprar.    
+    -->
+    
+    <div class="container">
+        <h1>Exercício 010</h1>
+        <div class="content">
+            <p>
+                Informe quando dinheiro você possui e o valor do atual do dolar, para calcular quanto você pode adiquirir.
+            </p>
+            <form action="#">
+                <label for="inDinheiro">Dinheiro: R$</label>
+                <input type="number" name="inDinheiro" id="inDinheiro" min="0" autofocus required>
+
+                <label for="inDolar">Valor do Dolar: R$</label>
+                <input type="number" name="inDolar" id="inDolar" min="0" step="0.01" autofocus required>
+
+                <input type="submit" value="Calcular" id="btnCalcular">
+                <input type="reset" value="Limpar" id="btnLimpar">
+            </form>
+            <h3 id="outResp"></h3>            
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
