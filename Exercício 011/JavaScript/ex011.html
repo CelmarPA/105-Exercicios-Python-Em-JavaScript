@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 011</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- 
+                        ______ Exercício 011 ______      
+
+        Faça um programa que leia a largura e altura de uma parede em  metros, calcule a sua área e a quantidade de tinta necessária para pintá-la, sabendo que cada litro de tinta pinta uma área de 2m².           
+    -->
+    
+    <div class="container">
+        <h1>Exercício 011</h1>
+        <div class="content">
+            <p>
+                Informe a largura e altura da parede que deseja pintar em metros, para calcular a quantidade de tinta necessaria.
+            </p>
+            <form action="#">
+                <label for="inLargura">Largura:</label>
+                <input type="number" name="inLargura" id="inLargura" required autofocus>
+                <label for="inAltura">Altura:</label>
+                <input type="number" name="inAltura" id="inAltura" required>
+
+                <input type="submit" value="Calcular" id="btnCalcular">
+                <input type="reset" value="Limpar" id="btnLimpar">
+            </form>
+            <h3 id="outResp"></h3>            
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
