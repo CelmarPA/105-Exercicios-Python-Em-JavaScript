@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 015</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- 
+                        ______ Exercício 015 ______
+            Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço a pagar, sabendo que o carro custa R$60 por dia e R$0,15 por Km rodado.         
+    -->
+    
+    <div class="container">
+        <h1>Exercício 015</h1>
+        <div class="content">
+            <p>
+                Informe a quantidade de dias de aluguel e quantos quilômetros rodados para calcular o valor total.
+            </p>
+            <form action="#">
+                <label for="inDias">Dias:</label>
+                <input type="number" name="inDias" id="inDias" step="1" autofocus required>
+                <label for="inDistancia">Quilômetros:</label>
+                <input type="number" name="inDistancia" id="inDistancia" step="0.1" required>
+
+                <input type="submit" value="Calcular" id="btnCalcular">
+                <input type="reset" value="Limpar" id="btnLimpar">
+            </form>
+            <h3 id="outResp"></h3>            
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
